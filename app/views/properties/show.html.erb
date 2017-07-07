@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1></h1>
+    <% @properties.each do |property| %>
+      <h2>Descrição do Imóvel</h2>
+      <p>Número Máximo de Visitantes: <%= property.maximum_guests %></p>
+      <p>Dias mínimos para locação: <%= property.minimum_rent %></p>
+      <p>Dias máximos para locação: <%=  property.maximum_rent %></p>
+      <p>Preço Diária: <%= property.daily_rate %></p>
+      <p>Tipo do Imóvel: <%= property.property_type %></p>
+      <p>Finalidade da Locação: <%= property.rent_purpose %></p>
+      <p>Localização: <%= property.property_location %></p>
+      <p>Descrição: <%= property.description %></p>
+    <% end %>
+  </body>
+</html>
